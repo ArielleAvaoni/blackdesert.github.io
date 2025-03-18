@@ -1,0 +1,85 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  position: relative;
+  min-height: 100vh; /* Ensure the page takes at least the height of the viewport */
+  background-image: linear-gradient(to bottom, transparent, black), url('/images/GUI-ONI-2.png'); /* Add gradient overlay and background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keep the background fixed as the content scrolls */
+}
+
+header {
+  background-color: transparent; /* No background color for the header */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul.nav-menu {
+  display: flex;
+  justify-content: space-between; /* Spread out the menu items with space in between */
+  align-items: center; /* Align menu items vertically */
+  padding: 10px 0;
+}
+
+nav ul.nav-menu li {
+  margin: 0 10px; /* Adjust the margin for spacing */
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff; /* Set text color to white */
+  font-weight: bold;
+  border: none; /* Remove the border */
+  padding: 5px; /* Adjust padding for space around items */
+  transition: color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+nav a:hover {
+  color: rgba(255, 255, 255, 0.5); /* Semi-transparent white text on hover */
+}
+
+.apply-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.apply-button button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.apply-button button:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  border-style: solid;
+  border-width: 0 10px 10px 0;
+  border-color: transparent #4CAF50 transparent transparent;
+  z-index: -1;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
