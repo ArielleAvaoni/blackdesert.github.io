@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personnel Search</title>
+  <link rel="stylesheet" href="/styles/Style.css">
+</head>
+<body>
+  <header>
+    <h1>Personnel Search</h1>
+  </header>
+  <main>
+    <section id="search-section">
+      <h2>Search for Personnel</h2>
+      <form id="search-form">
+        <label for="search-input">Search:</label>
+        <input type="text" id="search-input" name="search-input" placeholder="Enter name, ID, or department">
+        <button id="search-button">Search</button>
+      </form>
+      <div id="search-results" style="display: none;">
+        <h2>Search Results</h2>
+        <ul id="search-results-list"></ul>
+      </div>
+    </section>
+  </main>
+  <script src="/Scripts/pers.js"></script>
+</body>
+</html>
