@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Office of Naval Intelligence</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Link to your custom CSS stylesheet -->
+    <script src="/scripts/app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <h2 class="logo">Logo</h2>
+      <nav class="navagation">
+        <a href="index.html">Home</a>
+        <a href="#">Media</a>
+        <a href="#">Enlist</a>
+        <a href="#">About</a>
+        <a href="#">Divisions</a>
+        <button class="btnLogin-popup"onclick="redirectToLogin()">Login</button>
+        <button class="btnRegister-popup" onclick="redirectToRegister()">Register</button>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+      <div class="form-box login">
+        <h2>Register</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="text" required />
+            <label>Username</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox" />I agree to the terms</label>
+          </div>
+          <button type="submit" class="btn">Register</button>
+          <div class="login-register">
+            <p>
+              Already have an Account ?<a href="login.html" class="login-Link"
+                >Login</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <p>&copy; 2023 - Office of Naval Intelligence</p>
+  </footer>
+</html>

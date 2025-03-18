@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/styles/enlist.css">
+    <script src="/scripts/app.js"></script>
+    <title>Office of Naval Intelligence</title>
+</head>
+<body>
+    <header>
+      <h2 class="logo"><img src="/images/oniseal.png"></h2>
+        <nav class="navigation">
+          <a href="index.html">Home</a>
+          <a href="Media.html">Media</a>
+          <a href="Enlist.html">Enlist</a>
+          <a href="About.html">About</a>
+          <a href="Divisions.html">Divisions</a>
+        </nav>
+    </header>
+    <main>
+      <section id="enlistment-form">
+        <div class="container">
+          <h2>Enlistment Form</h2>
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="age">Age:</label>
+              <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+              <label for="experience">Gaming Experience:</label>
+              <textarea id="experience" name="experience" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="reason">Reason for Joining:</label>
+              <textarea id="reason" name="reason" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="role">Desired Role:</label>
+              <select id="role" name="role" required>
+                <option value="" disabled selected>Select a role</option>
+                <option value="unsc-army">UNSC Army</option>
+                <option value="unsc-navy">UNSC Navy</option>
+                <option value="marine-corps">Marine Corps</option>
+                <option value="spartan-ii">Spartan II</option>
+                <option value="spartan-iii">Spartan III</option>
+                <option value="operator">Operator</option>
+              </select>
+              <div class="form-group">
+                <label for="Weakness">Weakness:</label>
+                <textarea name="Weakness" id="Weakness" reaquired></textarea>
+              </div>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 - Office of Naval Intelligence</p>
+      </footer>
+</body>
+</html>
